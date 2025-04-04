@@ -7,7 +7,7 @@
 
   --separate-color: #f4f4f5;
   --black-color: #000;
-  --light-black-color: #18181b;
+  --light-black-color: #27272a;
   --red-color: #d32f2f;
   --green-color: #16a34a;
   --yellow-color: #FFA500;
@@ -34,4 +34,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+ul{
+      list-style: none;
 }

@@ -1,48 +1,56 @@
-.header{
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 30px;
+  border-bottom: 2px solid var(--separate-color);
+
+  .navbar {
     display: flex;
-    justify-content: space-between;
-    padding: 13px 30px;
-    border-bottom: 2px solid var(--separate-color);
-    
+    align-items: center;
+    gap: 25px;
 
-    .navbar{
-        display: flex;
-        align-items: center;
-        gap: 13px;
+    ul {
+      list-style: none;
+      gap: 1.2rem;
+      display: flex;
 
-        ul{
-            list-style: none;
-            gap: 1rem;
-            display: flex;
-        }
-
+      li {
+        cursor: pointer;
+        padding-block: 5px;
+      }
     }
-    .login{
-        gap: 8px;
-        .theme-button{
-            background: none;
-            display: flex;
-            border: none;
-            outline: none;
-            color: var(--text-color);
-            cursor: pointer;
-            padding: 5px;
-            font-size: 1.5rem;
-        }
-        .login-btn{
-            display: flex;
-            text-decoration: none;
-            align-items: center;
-            padding: 10px 12px;
-            background: var(--background-color-alt);
-            border-radius: 30px;
-            color: var(--text-color);
-            box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 20%);
-
-            svg{
-                font-size: 2rem;
-                
-            }
-        }
+  }
+  .login {
+    gap: 8px;
+    .theme-button {
+      background: none;
+      display: flex;
+      border: none;
+      outline: none;
+      color: var(--text-color);
+      cursor: pointer;
+      padding: 5px;
+      font-size: 1.5rem;
     }
+    .login-btn {
+      display: flex;
+      text-decoration: none;
+      align-items: center;
+      padding: 10px 12px;
+      background: var(--background-color-alt);
+      border-radius: 30px;
+      gap: 5px;
+      color: var(--text-color);
+      box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 20%);
+      transition: 0.2s ease-in-out;
+
+      svg {
+        font-size: 2rem;
+      }
+      &:hover {
+        background: var(--text-color);
+        color: var(--background-color-alt);
+      }
+    }
+  }
 }
