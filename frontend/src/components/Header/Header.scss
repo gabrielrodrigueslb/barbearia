@@ -1,0 +1,48 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 30px;
+    border-bottom: 2px solid var(--separate-color);
+    
+
+    .navbar{
+        display: flex;
+        align-items: center;
+        gap: 13px;
+
+        ul{
+            list-style: none;
+            gap: 1rem;
+            display: flex;
+        }
+
+    }
+    .login{
+        gap: 8px;
+        .theme-button{
+            background: none;
+            display: flex;
+            border: none;
+            outline: none;
+            color: var(--text-color);
+            cursor: pointer;
+            padding: 5px;
+            font-size: 1.5rem;
+        }
+        .login-btn{
+            display: flex;
+            text-decoration: none;
+            align-items: center;
+            padding: 10px 12px;
+            background: var(--background-color-alt);
+            border-radius: 30px;
+            color: var(--text-color);
+            box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 20%);
+
+            svg{
+                font-size: 2rem;
+                
+            }
+        }
+    }
+}
