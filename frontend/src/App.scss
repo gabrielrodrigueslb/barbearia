@@ -3,24 +3,32 @@
 :root {
   --background-color: #ffffff;
   --background-color-alt: #ffffff;
-  --text-color: #11181c;
-
+  --button-background:#fff;
+  --text-color: #ECEDEE;
   --separate-color: #f4f4f5;
   --black-color: #000;
-  --light-black-color: #27272a;
+  --light-black-color: #181818;
   --red-color: #d32f2f;
-  --green-color: #16a34a;
+  --white-color: #fff;
   --yellow-color: #FFA500;
   --text-color-alt: #a1a1aa;
   --primary-color: #0072bc;
   --secondary-color: linear-gradient(90deg, #07eef6 0%, #2694fb 100%);
+  
 }
+[data-theme='light'] {
+  --button-background:#fff;
+}
+
+
 
 [data-theme='dark'] {
   --background-color: #111111;
   --background-color-alt: #18181b;
+  --button-background:#27272a;
   --text-color: #ffffff;
   --separate-color: #27272a;
+ 
 }
 
 body {

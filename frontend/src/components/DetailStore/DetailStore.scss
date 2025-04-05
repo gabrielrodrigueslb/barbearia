@@ -25,7 +25,8 @@
       margin-bottom: 1.175rem;
     }
 
-    p,span {
+    p,
+    span {
       font-size: 0.75rem;
     }
   }
@@ -76,38 +77,40 @@
     }
   }
 
-  .payment-methods{
-    .payment-methods-list{
+  .payment-methods {
+    .payment-methods-list {
       display: flex;
       list-style: none;
       gap: 10px;
       font-size: 0.8rem;
       flex-wrap: wrap;
-      .payment-method{
+      .payment-method {
         padding: 8px;
         border-radius: 1rem;
-      background: var(--light-black-color);
+        background: var(--button-background);
+        box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 20%);
       }
     }
   }
 
-  .social-medias{
-    .social-medias-list{
+  .social-medias {
+    .social-medias-list {
       display: flex;
       gap: 1rem;
       flex-wrap: wrap;
 
-      .social-media{
+      .social-media {
         font-size: 1.5rem;
         display: flex;
         padding: 12px;
         border-radius: 50%;
-        background: var(--light-black-color);
+        background: var(--button-background);
         transition: all 0.2s ease-in-out;
+        box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 20%);
 
         &:hover {
           transform: scale(1.1);
-          
+
           background: var(--text-color);
           color: var(--background-color-alt);
           cursor: pointer;
@@ -123,21 +126,22 @@
       flex-wrap: wrap;
       flex-direction: column;
 
-      .contact{
+      .contact {
         display: flex;
         align-items: center;
         gap: 10px;
         color: var(--text-color-alt);
         font-size: 0.8rem;
-        .icon{
-
+        
+        .icon {
           font-size: 1.3rem;
           display: flex;
           padding: 10px;
           border-radius: 50%;
-          background: var(--light-black-color);
+          background: var(--button-background);
           transition: all 0.2s ease-in-out;
-          
+          box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 20%);
+
           &:hover {
             transform: scale(1.1);
             background: var(--text-color);
@@ -145,12 +149,7 @@
             cursor: pointer;
           }
         }
-
-
-
-        
       }
     }
   }
-
 }
