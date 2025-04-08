@@ -3,6 +3,7 @@
   justify-content: space-between;
   padding: 13px 30px;
   border-bottom: 2px solid var(--separate-color);
+  transition: all 0.2s ease-in-out;
 
   .navbar {
     display: flex;

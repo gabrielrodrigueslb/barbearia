@@ -1,6 +1,7 @@
 import { FaStar, FaRegHeart, FaWifi,FaCar } from 'react-icons/fa6';
 import { MdAccessible } from "react-icons/md";
 import { MdOutlineChildCare } from "react-icons/md";
+import AmenityCard from '../AmenityCard/amenityCard';
 
 import './Main.scss';
 
@@ -11,13 +12,13 @@ export default function Main() {
     <>
       <main className="home container">
           <picture className='banner-container'>
-            <img src="./banner.png" alt="" />
+            <img src="./banner.png" alt="banner da barbearia" />
           </picture>
           <section className="section-store">
             <div className='content'>
             <div className="store">
               <picture className="logo-container">
-                <img src="./barbearia.png" alt="" />
+                <img src="./barbearia.png" alt="Logo barbearia" />
               </picture>
               <div className="store-infos">
                 <h1>BarberStore</h1>
@@ -57,20 +58,11 @@ export default function Main() {
             </p>
 
             <ul className='amenities-list'>
-              <li className='amenity-item'>
-                <span className='icon'><FaWifi/></span>
-                Wi-fi
-              </li>
-              <li className='amenity-item'>
-                <span className='icon'><FaCar/></span>
-              Estacionamento
-              </li><li className='amenity-item'>
-                <span className='icon'><MdAccessible/></span>
-                Acessibilidade
-              </li><li className='amenity-item'>
-                <span className='icon'><MdOutlineChildCare/></span>
-                Atende crianças
-              </li>
+              <AmenityCard icon={FaWifi} title="Wi-Fi" situation="active" />
+              <AmenityCard icon={FaCar} title="Estacionamento"
+              situation="active"/>
+              <AmenityCard icon={MdAccessible} title="Acessibilidade" situation="inactive"/>
+              <AmenityCard icon={MdOutlineChildCare} title="Atende crianças" situation="active"/>
             </ul>
            </section>
             
