@@ -1,9 +1,12 @@
 import { FaStar, FaRegHeart, FaWifi,FaCar } from 'react-icons/fa6';
+import { FaSearch } from "react-icons/fa";
+
 import { MdAccessible } from "react-icons/md";
 import { MdOutlineChildCare } from "react-icons/md";
-import AmenityCard from '../AmenityCard/amenityCard';
+import AmenityCard from '../AmenityCard/AmenityCard';
 
 import './Main.scss';
+import CardService from '../CardService/CardService';
 
 
 export default function Main() {
@@ -65,6 +68,31 @@ export default function Main() {
               <AmenityCard icon={MdOutlineChildCare} title="Atende crianças" situation="active"/>
             </ul>
            </section>
+            
+          </section>
+
+          <section className='service'>
+            <h2 className='title'>
+              Serviços
+              </h2>
+              <div className='searchbar'>
+                <button><FaSearch/></button>
+                <input type="text" placeholder="Pesquisar"/>
+              </div>
+              <p>Categorias</p>
+
+              <ul className='category-list'>
+                <li className='category'>Combos</li>
+                <li className='category'>
+                  Serviços extras
+                </li>
+              </ul>
+
+              <ul className='services-list'>
+                <CardService/>
+                 <CardService/>
+                 
+              </ul>
             
           </section>
           

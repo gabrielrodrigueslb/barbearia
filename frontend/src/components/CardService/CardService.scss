@@ -1,0 +1,87 @@
+.service-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 2rem;
+    
+
+    .service-content{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    
+        .service-icon{
+            background: var(--text-color);
+            width: 100%;
+            height: 56px;
+            border-radius: 50%;
+            max-width: 56px;
+           display: flex;
+        }
+        
+        .service-info{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            .title{
+                font-size: 0.85rem;
+                font-weight: 600;
+            }
+
+            .description{
+            font-size: 0.75rem;
+            max-width: 450px;
+            }
+
+            .footer-infos{
+                max-width: 250px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .price, .duration{
+                    font-size: 0.85rem;
+                    font-weight: 600;
+                }
+
+                .price{
+                    color: var(--green-color);
+                }
+
+                .duration{
+                    color: var(--text-color-alt);
+                    display: flex;
+                    align-items: center;
+                    gap: 0.3rem;
+                    svg{
+                        font-size: 1rem;
+                        display: inline-flex;
+                        align-items: center;
+                        margin-bottom: 3px;
+                        
+                    }
+
+                }
+            }
+
+        }
+    
+    
+    }
+
+    .service-button{
+        background-color: var(--primary-color);
+        padding: 10px;
+        font-weight: 600;
+        color: var(--text-color);
+        border-radius: 6px;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+
+        &:hover{
+            background-color: var(--text-color);
+            color: var(--primary-color);
+            transform: scale(1.1);
+        }
+    }
+}
